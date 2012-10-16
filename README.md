@@ -76,6 +76,7 @@ class MyVoter extends AbstractVoter implements VoterInterface
     }
 
 }
+```
 
 # Todo
 
