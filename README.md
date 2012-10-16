@@ -50,6 +50,33 @@ You can easily define new voters or define your own strategy.
 
 You have just to inherit from `VoterInterface` and add the service id of the voter on the configuration.
 
+Example of voter:
+
+```php
+<?php
+
+namespace Acme\DoudaBundle\Locale\Voter;
+
+use Rezzza\LocaleVoterBundle\Locale\Context\LocaleContextInterface;
+use Rezzza\LocaleVoterBundle\Locale\Voter\AbstractVoter;
+
+class MyVoter extends AbstractVoter implements VoterInterface
+{
+    /**
+     * {@inheritdoc}
+     */
+    public function vote(LocaleContextInterface $context)
+    {
+        $request = $context->getRequest();
+
+        // suggestLocale will check if locale is supported.
+        if ($request->get('chuck') === 'testa' && $this->suggestLocale('NOPE')) {
+            return 'NOPE';
+        }
+    }
+
+}
+
 # Todo
 
 - Write tests.
