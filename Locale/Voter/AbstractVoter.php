@@ -2,8 +2,6 @@
 
 namespace Rezzza\LocaleVoterBundle\Locale\Voter;
 
-use Symfony\Component\DependencyInjection\ContainerInterface;
-
 /**
  * AbstractVoter
  *

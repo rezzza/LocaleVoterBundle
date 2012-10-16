@@ -4,7 +4,6 @@ namespace Rezzza\LocaleVoterBundle\Locale\Context;
 
 use Symfony\Component\HttpFoundation\Request;
 
-
 /**
  * LocaleContextInterface
  *
