@@ -1,6 +1,10 @@
 LocaleVoterBundle
 =================
 
+**DEPRECATED**
+
+Use [LocaleBundle](https://github.com/lunetics/LocaleBundle) instead.
+
 Fetch locale of project through voters.
 
 # Installation
